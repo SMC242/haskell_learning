@@ -46,3 +46,12 @@ f :: Integer -> Floating -> Floating
 f x y = x + y
 -}
 -- This is a whole new way of thinking. It's very cool
+
+-- switch/ELSEIF statements can be done with "guards". I'm sure I'll learn more about them later but here's an example
+grade_score :: Integer -> String
+grade_score percentage 
+    | percentage > 70 = "A"
+    | percentage > 60 = "B"
+    | percentage > 50 = "C"
+    | percentage > 40 = "D"
+    | otherwise = "F"
