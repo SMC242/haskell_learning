@@ -26,11 +26,11 @@ four = 6 + (-2)
 
 -- The tutorial is talking about max and min and I'm bored now
 -- ... Let's work out how to make max and min!
-my_min :: Integer -> Integer -> Integer
-my_min first second = if first < second then first else second
+myMin :: Integer -> Integer -> Integer
+myMin first second = if first < second then first else second
 
-my_max :: Integer -> Integer -> Integer
-my_max first second = if first > second then first else second
+myMax :: Integer -> Integer -> Integer
+myMax first second = if first > second then first else second
 
 -- I learned 3 things:
 -- 1. The type signiture comes before the function. That's the funny colon thingy
