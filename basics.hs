@@ -48,10 +48,18 @@ f x y = x + y
 -- This is a whole new way of thinking. It's very cool
 
 -- switch/ELSEIF statements can be done with "guards". I'm sure I'll learn more about them later but here's an example
-grade_score :: Integer -> String
-grade_score percentage 
+gradeScore :: Integer -> String
+gradeScore percentage 
     | percentage > 70 = "A"
     | percentage > 60 = "B"
     | percentage > 50 = "C"
     | percentage > 40 = "D"
     | otherwise = "F"
+
+-- An example of composition
+-- Composition is when you use smaller functions to build a more complex function
+-- `-- | docstring here`  is the syntax for docstrings
+-- | Gets the sum of two numbers doubled
+doubleUs x y = doubleMe x + doubleMe y
+doubleMe x = x + x  
+-- Haskell has forward declarations
