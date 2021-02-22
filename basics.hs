@@ -63,3 +63,19 @@ gradeScore percentage
 doubleUs x y = doubleMe x + doubleMe y
 doubleMe x = x + x  
 -- Haskell has forward declarations
+
+-- Lists
+-- ++ joins two lists
+-- : is preferred for list concatenation as it adds to the head of the list
+-- instead of the tail
+-- Indexing is done with a double bang
+-- E.G [1, 2, 3] !! 1 will output 2
+-- It is possible to get an index out of range error
+-- Lists seem runtime error prone. I should be careful with those
+thing = head []  -- this will error
+data IsListEmptyResult = String | Num
+-- | checking for an empty list
+isListEmpty :: (any a) [a] -> IsListEmptyResult
+isListEmpty l
+    | null l = "EMPTY"
+    | otherwise = length l
